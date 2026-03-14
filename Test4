@@ -1,0 +1,16 @@
+public class Test4 {
+    public static void main(String[] args) {
+
+        int n = 4;
+        int size = 2 * n - 1;
+
+        for(int i = 0; i < size; i++) {
+            for(int j = 0; j < size; j++) {
+
+                int value = Math.max(Math.abs(i - (n - 1)), Math.abs(j - (n - 1))) + 1;
+                System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+    }
+}
